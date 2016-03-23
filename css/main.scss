@@ -1,0 +1,70 @@
+/*-----------------------------------------------------------------------------
+Passou do Ponto - Stylesheet
+Autor: Werther Azevedo
+-----------------------------------------------------------------------------*/
+
+/* =Vars
+-----------------------------------------------------------------------------*/
+$main-color: #fab500;
+
+/* =Comum
+-----------------------------------------------------------------------------*/
+body{
+    font-family: Raleway, sans-serif;
+}
+
+/* =Navbar
+-----------------------------------------------------------------------------*/
+
+.navbar-default{
+    background: $main-color;
+    margin-top: 1rem;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: #fff79d;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+
+}
+
+.navbar-brand img{
+    max-height: 150%;
+}
+
+/* =Map
+-----------------------------------------------------------------------------*/
+.map_canvas{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+}
+
+/* =Feed
+-----------------------------------------------------------------------------*/
+.home_feed{
+    border: 1px solid #555;
+}
+
+.feed_container{
+    height: 200px;
+    overflow: auto;
+}
+
+/* =Footer
+-----------------------------------------------------------------------------*/
+footer{
+    padding: 1rem;
+    margin: 2rem 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}

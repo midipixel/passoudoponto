@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "harp server --port 9001 & browser-sync start --proxy 'localhost:9001' --files '**/*.jade, **/*.sass, **/*.json, **/*.js' --no-notify"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.3.7"
+  }
+}
