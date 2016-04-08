@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <%- partial("_htmlHead") %>
+</head>
+
+<body>
+    <div class="container">
+        <%- partial("_header") %>
+
+        <ul class="feed">
+            <% for(var i in complaints){ %>
+            <li class="complaint">
+                <header class="row">
+                    <div class="col-xs-4">
+                        <h5><%= complaints[i].transport %></h5>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="complaint_date"><%= complaints[i].date %>, <span><%= complaints[i].time %></span></p>
+                        <p class="complaint_place"><%= complaints[i].place %></p>
+                    </div>
+                </header>
+
+                <div class="row">
+                    <h2 class="col-md-12">
+                        <strong class="complaint_transport">Ônibus <%= complaints[i].transport %></strong> estava com <strong class="complaint_event"><%= complaints[i].event %></strong>.
+                    </h2>
+                </div>
+
+                <article class="row">
+                    <% if (complaints[i].image){ %>
+                    <figure class="col-md-4">
+                        <img src="<%= complaints.c1.image %>" class="img-responsive">
+                    </figure>
+                    <% } %>
+
+                    <div class="col-md-8 complaint_description">
+                        <p><%= complaints[i].description %></p>
+                    </div>
+                </article>
+
+                <ul class="row">
+                    <li class="col-xs-6 col-md-3">
+                        <button type="button" class="btn btn-block">Comentar</button>
+                    </li>
+                    <li class="col-xs-6 col-md-3">
+                        <button type="button" class="btn btn-block">Compartilhar</button>
+                    </li>
+                </ul>
+            </li>
+            <% }; %>
+        </ul>
+
+        <%- partial("_footer") %>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js">
+</script>
+</body>
+</html>

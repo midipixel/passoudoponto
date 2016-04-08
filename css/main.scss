@@ -6,6 +6,7 @@ Autor: Werther Azevedo
 /* =Vars
 -----------------------------------------------------------------------------*/
 $main-color: #fab500;
+$temp-gray: #aaa;
 
 /* =Common
 -----------------------------------------------------------------------------*/
@@ -17,7 +18,13 @@ h2{
     font-size: 2.5rem;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
 
 @import 'components';
 @import 'home';
+@import 'feed';
 
