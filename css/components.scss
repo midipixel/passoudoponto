@@ -1,0 +1,33 @@
+/* =Navbar
+-----------------------------------------------------------------------------*/
+
+.navbar-default{
+    background: $main-color;
+    margin-bottom: 3em;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: #fff79d;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+
+}
+
+.navbar-brand img{
+    max-height: 150%;
+}
+
+/* =Footer
+-----------------------------------------------------------------------------*/
+footer{
+    padding: 1rem;
+    margin: 2rem 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
